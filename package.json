@@ -13,7 +13,7 @@
   "jest": {
     "testEnvironment": "node",
     "setupFilesAfterEnv": [
-      "./test-setup.js"
+      "./test/setup.js"
     ],
     "coveragePathIgnorePatterns": [
       "/node_modules/"
