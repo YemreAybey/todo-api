@@ -1,9 +1,12 @@
 const express = require("express");
+const Todo = require("../models/Todos");
 
 const router = express.Router();
 
 router.get("/api/todos", async (req, res) => {
-  res.send({ todos: [1, 2, 3, 4] });
+  const todos = await Todo.find({});
+
+  res.send(todos);
 });
 
 module.exports = router;

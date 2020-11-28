@@ -6,7 +6,7 @@ const Todo = require("../models/Todos");
 
 const router = express.Router();
 
-router.delete(
+router.get(
   "/api/todos/:id",
   [param("id").custom((input) => mongoose.Types.ObjectId.isValid(input))],
   validateRequest,
@@ -17,8 +17,7 @@ router.delete(
         .status(404)
         .send({ errors: [{ message: "We couldn't find such a task" }] });
     }
-    await Todo.findByIdAndRemove(todo.id);
-    res.status(200).send({ message: "Todo Deleted" });
+    res.send(todo);
   }
 );
 

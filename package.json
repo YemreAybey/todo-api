@@ -20,6 +20,7 @@
     ]
   },
   "dependencies": {
+    "config": "^3.3.3",
     "express": "^4.17.1",
     "express-validator": "^6.7.0",
     "mongoose": "^5.10.17"

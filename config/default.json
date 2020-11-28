@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://Emre:1720aybey@todo-app.w2stk.mongodb.net/todos?retryWrites=true&w=majority"
+}
