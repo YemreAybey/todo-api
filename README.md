@@ -39,7 +39,7 @@ $ git clone https://github.com/YemreAybey/todo-api.git
 > cd into the directory, install dependencies and start
 
 ```sh
-$ cd interview-todo
+$ cd todo-api
 $ yarn or npm install
 $ yarn start or npm start
 ```
