@@ -13,13 +13,15 @@
   "jest": {
     "testEnvironment": "node",
     "setupFilesAfterEnv": [
-      "./test-setup.js"
+      "./test/setup.js"
     ],
     "coveragePathIgnorePatterns": [
       "/node_modules/"
     ]
   },
   "dependencies": {
+    "config": "^3.3.3",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-validator": "^6.7.0",
     "mongoose": "^5.10.17"
