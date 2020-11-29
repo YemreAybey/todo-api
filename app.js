@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const indexTodosRouter = require("./routes/index");
 const addTodoRouter = require("./routes/new");
 const showTodoRouter = require("./routes/show");
@@ -9,6 +10,13 @@ const { json } = require("body-parser");
 
 const app = express();
 app.use(json());
+app.use(
+  cors({
+    credentials: true,
+    origin: true,
+  })
+);
+app.options("*", cors());
 app.use(indexTodosRouter);
 app.use(showTodoRouter);
 app.use(addTodoRouter);

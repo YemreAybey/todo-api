@@ -1,6 +1,6 @@
 const TODO_STATUSES = {
-  COMPLETED: 1,
-  NOT_COMPLETED: 0,
+  COMPLETED: 2,
+  NOT_COMPLETED: 1,
 };
 
 module.exports = TODO_STATUSES;
